@@ -11,6 +11,9 @@ app.use("/api/auth", auth)
 app.get("/", (req, res)=>{
     res.send("Hello World")
 })
+app.get("/welcome", (req, res)=>{
+    res.send("Welcome World")
+})
 
 app.listen(port, ()=>{
     console.log(`app is running on ${port}`)
